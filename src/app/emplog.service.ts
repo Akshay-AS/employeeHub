@@ -18,6 +18,7 @@ export class EmplogService {
 
 
   login(eid: any, psw: any) {
+    this.flag=0;
     this.empList = JSON.parse(localStorage.getItem("EmployeeList") || "{}");
 
     for (let i of this.empList) {
