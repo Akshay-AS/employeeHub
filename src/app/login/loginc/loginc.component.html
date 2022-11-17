@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="Submit()">
+  <div class="container">
+    <label for="eid"><b>Employee ID</b></label>
+    <input [(ngModel)]="eid" type="text" placeholder="Enter Employee ID" name="eid" formControlName="EmployeeId"
+      required>
+
+    <label for="psw"><b>Password</b></label>
+    <input [(ngModel)]="psw" type="password" placeholder="Enter Password" name="psw" formControlName="Password"
+      required>
+
+    <button type="submit">Login</button>
+  </div>
+</form>

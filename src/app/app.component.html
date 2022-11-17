@@ -1,0 +1,29 @@
+<div class="head">
+    <h1 style="float:center">Employee Management System</h1>
+</div>
+<!-- <div>
+    <button routerLink="/" style="float:left">Home</button>
+    <button routerLink="/login" style="float:right">login</button>
+</div> -->
+<ul>
+    <li>
+        <a class="home" routerLink="/" style="float:left" (click)="Home()">
+            Home
+        </a>
+    </li>
+    <li>
+        <div *ngIf="Login()">
+            <a class="login" routerLink="/login" style="float:right">
+                Login
+            </a>
+        </div>
+        <div *ngIf="!Login()">
+            <a class="login" routerLink="/login" style="float:right" (click)="Logout()">
+                Logout
+            </a>
+        </div>
+    </li>
+</ul>
+
+
+<router-outlet></router-outlet>

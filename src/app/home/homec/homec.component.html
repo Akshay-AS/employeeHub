@@ -1,0 +1,11 @@
+<div class="grid-container">
+    <div *ngFor="let i of empList">
+        <div class="card" (click)="showEmployee(i)">
+            <div class="container">
+                <p>{{i.EmployeeName}}</p>
+                <p>{{i.PhoneNumber}}</p>
+                <p>{{i.teamNumber}}</p>
+            </div>
+        </div>
+    </div>
+</div>
